@@ -1,2 +1,2 @@
 #!/bin/bash
---from=CURRENT OWNER:
+chown --from=guillaume betty
