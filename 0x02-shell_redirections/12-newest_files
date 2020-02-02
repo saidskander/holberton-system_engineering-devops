@@ -1,2 +1,2 @@
-#!/bin/dash
-ls -1t | head -n 10
+#!/bin/bash
+ls -lt | head -n 10
