@@ -1,0 +1,2 @@
+#!/bin/dash
+find . -type f > ls -lt | head
