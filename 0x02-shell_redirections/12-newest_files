@@ -1,2 +1,2 @@
 #!/bin/dash
-find . -type f > ls -lt | head
+ls -lt | head -n 10
