@@ -1,2 +1,2 @@
 #!/bin/bash
-VAR HOLBERTON=Betty
+echo $VARHOLBERTON="Betty"
