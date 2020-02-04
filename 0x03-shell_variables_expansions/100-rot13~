@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "You are in a twisty maze of passages, all alike." | tr 'a-zA-Z' 'n-za-mN-ZA-N'
