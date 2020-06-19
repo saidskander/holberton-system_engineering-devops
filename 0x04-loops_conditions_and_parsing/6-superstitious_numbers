@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# This script is displaying numbers and bad lucks using case inside echo
+box=1
+while [ $box -lt 21 ];
+do
+    echo "$box"
+    case $box in
+	4)
+	echo "bad luck from China"
+	;;
+	9)
+	echo "bad luck from Japan"
+	;;
+	17)
+	echo "bad luck from Italy"
+	;;
+	esac
+	let box+=1
+done
