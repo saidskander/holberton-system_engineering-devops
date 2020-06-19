@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
 x=0
-for (($x; $x < 10; x++));
+for ((; x < 10; x++));
 do
         echo "Holberton school"
 done;
