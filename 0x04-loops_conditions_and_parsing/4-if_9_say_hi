@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# if 9 back to the line and say hi
+box=1
+while [ $box -le 10 ];
+do
+    echo "Holberton School"
+    let box= box + 1
+    if [ "$box" -eq 10 ]
+    then
+        echo "Hi"
+    done
+done
