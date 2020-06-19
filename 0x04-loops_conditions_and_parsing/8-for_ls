@@ -2,5 +2,5 @@
 #script that displays the listing inside the directory by lines.
 for x in *;
 do
-echo "$x" | cut -d'-' -f 3
+echo "$x" | cut -d'-' -f 2
 done
