@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# fiz-buzz (Fizz-Buzz test is a coding interview question that is normally used to filter out developers)
+x=1
+for ((; x<=100; x++));
+do
+    if ! ((x%15)); then
+        echo FizzBuzz
+    elif ! ((x%3)); then
+        echo Fizz
+    elif ! ((x%5)); then
+        echo Buzz
+    else
+        echo $x
+    fi;
+done
