@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 including bad luck and good luck
+box=1
+while [ $box -le 10 ];
+do
+
+   if [ "$box" -eq 4 ]
+      then
+         echo "bad luck"
+   elif [ "$box" -eq 8 ]
+      then
+         echo "good luck"
+   else
+      echo "Holberton School"
+   fi
+   let box=box+1
+done
