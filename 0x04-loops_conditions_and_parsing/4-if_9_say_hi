@@ -4,7 +4,7 @@ box=1
 while [ $box -le 10 ];
 do
     echo "Holberton School"
-    let box= box + 1
+    let box=box+1
     if [ "$box" -eq 10 ]
     then
         echo "Hi"
