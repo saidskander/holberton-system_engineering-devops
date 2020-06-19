@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times
+
+box=1
+
+until [ $box -gt 10 ];
+do
+    echo "Holberton School"
+    let box+=1
+done;
