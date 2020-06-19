@@ -8,5 +8,5 @@ do
     if [ "$box" -eq 10 ]
     then
         echo "Hi"
-    done
+    fi
 done
