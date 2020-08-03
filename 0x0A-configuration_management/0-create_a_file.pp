@@ -1,4 +1,4 @@
-# creat file in /tmp/holberton
+# create a file in specific path
 file {'/tmp/holberton':
   ensure => file,
   mode  => '0744',
