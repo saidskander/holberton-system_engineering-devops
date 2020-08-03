@@ -4,6 +4,5 @@ file {'/tmp/holberton',
   mode => 0744,
   owner => www-data,
   group => www-data,
-  contain => I love Puppet,
-
+  content => I love Puppet,
 }
