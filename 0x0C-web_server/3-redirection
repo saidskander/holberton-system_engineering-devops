@@ -2,6 +2,7 @@
 # Instaall the nginx web server and redirect.
 apt-get -y update
 apt-get -y install nginx
+ufw allow 'Nginx HTTP'
 echo "Holberton School" > /var/www/html/index.nginx-debian.html
-sed -i "80 default_server /s/server_name _;/server_name _; /rewrite ^/redirect_me https:\/\/github.com\/saidskander permanent;/" /etc/nginx/sites-available/default
+sed -i '/listen 80 default_server/a rewrite ^/redirect_me https://https://github.com/saidskander permanent;' /etc/nginx/sites-available/default
 service nginx start
