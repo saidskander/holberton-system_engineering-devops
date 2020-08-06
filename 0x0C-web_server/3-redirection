@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Instaall the nginx web server and redirect.
-sudo apt-get update
-sudo apt-get -y install nginx
-sudo mkdir /etc/nginx/html
-sudo touch /etc/nginx/html/index.html
-sudo echo "Holberton School" > /etc/nginx/html/index.html
+apt-get update
+apt-get -y install nginx
+mkdir /etc/nginx/html
+touch /etc/nginx/html/index.html
+echo "Holberton School" > /etc/nginx/html/index.html
 printf %s "server {
     listen 80;
     listen [::]:80 default_server;
