@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# configures a brand new Ubuntu machine HTTP header & shellcheck disable SC2154
+apt-get update
+apt-get -y install nginx
+string2="http {\\n\\tadd_header X-Served-By \'$HOSTNAME\';"
+sudo sed -i "s/http {/$string2/" /etc/nginx/nginx.conf
+service nginx reload
+service nginx restart
