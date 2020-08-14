@@ -1,6 +1,6 @@
 # creat http Header 
 exec {'ensire update':
-command  => 'sudo apt update',
+command  => 'apt update',
 provider => shell
 }
 
