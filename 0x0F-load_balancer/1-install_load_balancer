@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Install and configure HAproxy on web erver
-
+# for more info "https://upcloud.com/community/tutorials/haproxy-load-balancer-ubuntu/"
 apt-get -y update
 apt-get -y install software-properties-common
 
