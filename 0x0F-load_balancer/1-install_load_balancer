@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Install and configure HAproxy on web erver
+
+apt-get -y update
+apt-get -y install software-properties-common
+
+add-apt-repository -y ppa:vbernat/haproxy-1.7
+apt-get -y update
+apt-get install haproxy=1.7.\* -y
+echo "frontend http_front
+      bind *:80
+      default_backend http_rear
+      backend http_rear
+      balance roundrobin
+      server web-01 35.196.178.240:80 check
+      server web-02 34.74.85.130:80 check" | tee /etc/haproxy/haproxy.cfg
+service haproxy start
+
