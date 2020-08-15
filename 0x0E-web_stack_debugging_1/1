@@ -1,0 +1,3 @@
+sed: couldn't open temporary file /etc/nginx/sites-enabled/sedBAWFaE: Permission denied
+ * Starting nginx nginx
+   ...done.
