@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2086
 
-Sub_domain () { dig "$1" | grep -A1 'ANSWER SECTION:' | tail -n 1 | sed -r "s/$1./$2/g" | sed -r "s/ /\t/g" | sed -r "s/\t/ /g" | awk '{ print "The subdomain " $1 " is a " $4 " record and points to "  $5 }'
+Sub_domain () {
+    dig "$1" | grep -A1 'ANSWER SECTION:' | tail -n 1 | sed -r "s/$1./$2/g" | sed -r "s/ /\t/g" | sed -r "s/\t/ /g" | awk '{ print "The subdomain " $1 " is a " $4 " record and points to "  $5 }'
 }
 
 if [ "$#" -eq 2 ]
