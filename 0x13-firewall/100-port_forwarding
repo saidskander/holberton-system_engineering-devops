@@ -15,9 +15,9 @@ udp6       0      0 ::1:123                 :::*                                
 udp6       0      0 :::123                  :::*                                -
 Active UNIX domain sockets (only servers)
 Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path
-unix  2      [ ACC ]     STREAM     LISTENING     1008325  22199/systemd       /run/user/1000/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     1008926  22357/systemd       /run/user/1000/systemd/private
 unix  2      [ ACC ]     SEQPACKET  LISTENING     11677    -                   /run/udev/control
-unix  2      [ ACC ]     STREAM     LISTENING     1008329  22199/systemd       /run/user/1000/snapd-session-agent.socket
+unix  2      [ ACC ]     STREAM     LISTENING     1008930  22357/systemd       /run/user/1000/snapd-session-agent.socket
 unix  2      [ ACC ]     STREAM     LISTENING     11665    -                   /run/systemd/private
 unix  2      [ ACC ]     STREAM     LISTENING     11672    -                   /run/lvm/lvmetad.socket
 unix  2      [ ACC ]     STREAM     LISTENING     11674    -                   /run/lvm/lvmpolld.socket
