@@ -6,7 +6,6 @@
 from sys import argv
 import requests
 
-
 if __name__ == '__main__':
     userId = argv[1]
     main = requests.get("https://jsonplaceholder.typicode.com/users/{}".
