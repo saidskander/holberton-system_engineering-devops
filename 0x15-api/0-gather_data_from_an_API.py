@@ -10,12 +10,12 @@ if __name__ == '__main__':
     userId = argv[1]
     main = requests.get("https://jsonplaceholder.typicode.com/users/{}".
                         format(userId), verify=False).json()
-    todosid = requests.get("https://jsonplaceholder.typicode.com/todos?userId={}".
+    todI = requests.get("https://jsonplaceholder.typicode.com/todos?userId={}".
                         format(userId), verify=False).json()
     tasks_Done = []
-    for task in todosid:
+    for task in todI:
         if task.get('completed') is True:
             tasks_Done.append(task.get('title'))
     print("Employee {} is done with tasks({}/{}):".
-          format(main.get('name'), len(tasks_Done), len(todosid)))
+          format(main.get('name'), len(tasks_Done), len(todI)))
     print("\n".join("\t {}".format(task) for task in tasks_Done))
