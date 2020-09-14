@@ -26,6 +26,6 @@ if __name__ == '__main__':
             completed_status = task['completed']
             completed_title = task['title']
             csvemployee.writerow(["{}".format(employee_id),
-                                 "{}".format(employee),
-                                 "{}".format(completed_status),
-                                 "{}".format(completed_title)])
+                                  "{}".format(employee),
+                                  "{}".format(completed_status),
+                                  "{}".format(completed_title)])
