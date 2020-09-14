@@ -11,7 +11,7 @@ if __name__ == '__main__':
     employee_id = argv[1]
     todo_requests = 'https://jsonplaceholder.typicode.com/todos/'
     user_reuests = 'https://jsonplaceholder.typicode.com/users/'
-    todoID = requests.get(todoID_requests, params={'userId': employee_id})
+    todoID = requests.get(todo_requests, params={'userId': employee_id})
     user = requests.get(user_reuests, params={'id': employee_id})
 
     todo_list = todoID.json()
