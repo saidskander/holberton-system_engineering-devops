@@ -8,7 +8,9 @@ def number_of_subscribers(subreddit):
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
 
     headers = {
-        "User-Agent": "win64:0x16.api.advanced:v1.0.0 (by /u/bdov_)"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)\
+        AppleWebKit/537.36 (KHTML, like Gecko)\
+        Chrome/85.0.4183.121 Safari/537.36"
     }
     x = requests.get(url, headers=headers, allow_redirects=False)
     if x.status_code == 404:
