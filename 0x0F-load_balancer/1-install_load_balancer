@@ -12,7 +12,7 @@ echo "frontend http_front
       default_backend http_rear
       backend http_rear
       balance roundrobin
-      server web-01 35.196.178.240:80 check
-      server web-02 34.74.85.130:80 check" | tee /etc/haproxy/haproxy.cfg
+      server web-01 35.237.87.143:80 check
+      server web-02 34.75.67.199:80 check" | tee /etc/haproxy/haproxy.cfg
 service haproxy start
 
