@@ -4,15 +4,11 @@ import requests
 
 
 def number_of_subscribers(subreddit):
-    """number_of_subscribers """
-    url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
-    user_agent = {'User-Agent':
-                  'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'}
-    req = requests.get(url, headers=user_agent, allow_redirects=False)
-    if req.status_code == 200:
-        req = req.json()
-        data_request = req.get('data')
-        subscribers = data_request.get('subscribers')
-        if data_request is not None and subscribers is not None:
-            return subscribers
-    return 0
+    """ Returns number of subscribers """
+    r = requests.get("https://reddit.com/r/{}/about.json".format(subreddit),
+        headers={"User-Agent":
+                 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36"})
+    if (r.status_code == 200):
+        return r.json().get("data").get("subscribers")
+    else:
+        return 0
