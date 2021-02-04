@@ -6,7 +6,7 @@ import requests
 def number_of_subscribers(subreddit):
     """number_of_subscribers """
     url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
-    user_agent = {'User-Agent': 'skander@mps'}
+    user_agent = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'}
     req = requests.get(url, headers=user_agent, allow_redirects=False)
     if req.status_code == 200:
         req = req.json()
